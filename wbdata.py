@@ -21,7 +21,7 @@ def getGdpData():
 
     final_result = response[1]
 
-    for page in range(2, pages):
+    for page in range(2, pages + 1):
         params["page"] = page
         response = requests.get(wb_base_url + wb_gdp_indicator, params).json()
         final_result += response[1]
