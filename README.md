@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/120071029/217882338-e667fed7-8965-4748-bfb0-63a615ca3c2a.png)
+
+
 # Data Analysis Bootcamp - Project 1
 ## Group 2 - Yellow
 
