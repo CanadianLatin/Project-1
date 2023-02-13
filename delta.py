@@ -9,6 +9,6 @@ def appendDelta(data_frame):
         filtered_df = data_frame.loc[data_frame["iso_code"] == country, ["iso_code", "date"] + columns_for_delta_calculation]
         for column in columns_for_delta_calculation:
             filtered_df["new_" + column] = np.ediff1d(filtered_df[column], to_begin=0)
-            filtered_df["new_" + column] = filtered_df.apply(lambda x: x["new_" + column] if x["new_" + column] > 0 else 0, axis = 1)
+            # filtered_df["new_" + column] = filtered_df.apply(lambda x: x["new_" + column] if x["new_" + column] > 0 else 0, axis = 1)
         delta_df = pd.concat([delta_df, filtered_df], ignore_index=True)
     return delta_df
